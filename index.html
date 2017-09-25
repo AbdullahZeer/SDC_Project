@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/animations-ie-fix.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="anime.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script/script.js"></script>
 
@@ -19,7 +21,8 @@
   <title></title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white nav-style fixed-top">
 
@@ -37,7 +40,7 @@
           <a class="nav-link" href="#home" data-target="home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#mission">Mission</a>
+          <a class="nav-link" href="#about-us">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#vision">Vision</a>
@@ -62,24 +65,30 @@
     </div>
   </section>
 
-  <section id="mission" class="block">
+  <section id="about-us" class="block">
+
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6 col-sm-12 block-item ">
+          <div class="">
+            <img class="mission-icon img-responsive" src="assets/missionV.svg" width="900" height="900" alt="mission" align="middle">
+          </div>
+          <div class="">
+            <img class="my-icon img-responsive" src="assets/missionV.svg" width="65" height="65" alt="mission" align="middle">
+          </div>
           <div class="text-center animatedParent" data-appear-top-offset='-200'>
             <h2 class="block-titles animated fadeInUp">- Mission -</h2>
             <p class="block-text animated fadeInUp">We are a student-based organization that recruits the creative talents of diverse students, facilitates their journey, and creates opportunities for them to expand their knowledge and skills in different dimensions. Through expertise of both
               our members and event services, we aim to create astonishing events, enhance AlFaisal’s social life, and ensure AlFaisal students experience a very enjoyable journey at the university.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="vision" class="block">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6 col-sm-12 block-item">
+          <div class="">
+            <img class="vision-icon img-responsive" src="assets/telescopeV.svg" width="900" height="900" alt="mission" align="middle">
+          </div>
+          <div class="">
+            <img class="my-icon img-responsive" src="assets/telescopeV.svg" width="65" height="65" alt="mission" align="middle">
+          </div>
           <div class="text-center">
             <h2 class="block-titles">- Vision -</h2>
             <p class="block-text">We hope to enhance the social life in our university and ensure its students receive the college experience they deserve for generations to come. Our events build bridges between students from different colleges, making their time at AlFaisal
@@ -88,14 +97,22 @@
         </div>
       </div>
     </div>
+
   </section>
 
   <section id="goals">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 text-left">
+
+        <div class="col-md-12">
+          <div class="">
+            <img class="goals-icon img-responsive" src="assets/goalV.svg" width="900" height="900" alt="goals" align="middle">
+          </div>
+        </div>
+
+        <div class="col-md-12">
           <div class="text-center">
-            <h2 class="goals-title">- Goals -</h2>
+            <h2 class="center-title">- Goals -</h2>
           </div>
         </div>
       </div>
@@ -115,6 +132,195 @@
       </div>
     </div>
     </div>
+  </section>
+
+  <section id="events">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="center-title">- events -</h2>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="assets/monthly-calendar.png" alt="Card image cap">
+            <div class="card-body">
+              <span class="card-text text-center count">1200</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="assets/monthly-calendar.png" alt="Card image cap">
+            <div class="card-body">
+              <span class="card-text text-center count">1200</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="assets/monthly-calendar.png" alt="Card image cap">
+            <div class="card-body">
+              <span class="card-text text-center count">1200</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="assets/monthly-calendar.png" alt="Card image cap">
+            <div class="card-body">
+              <span class="card-text text-center count">1200</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="center-title">- Team -</h2>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+        <div class="col-md-12">
+          <h1 class="team-titles text-left">Executives</h1>
+        </div>
+
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-12">
+          <h1 class="team-titles text-left">Development</h1>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-man-avatar"></span>
+          <h4 class="avatar-name">Faysal</h4>
+        </div>
+        <div class="col-md-3 col-sm-4 text-center">
+          <span class="avatars-woman-avatar"></span>
+          <h4 class="avatar-name">Sarah</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors">
+
+  </section>
+
+  <section id="gform">
+    <form class="" action="https://script.google.com/macros/s/AKfycbxAbzWEeXvFaFTVXvfdcpuPelVCT97H0-U4rG8stIgqx6JV2ec/exec" method="post">
+      <div class="col-sm-8 contact-form">
+        <form id="contact" method="post" class="form" role="form">
+          <div class="row">
+            <div class="col-xs-6 col-md-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+            </div>
+            <div class="col-xs-6 col-md-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+            </div>
+          </div>
+          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+          <br />
+          <div class="row">
+            <div class="col-xs-12 col-md-12 form-group">
+              <button class="btn btn-primary pull-right" type="submit">Submit</button>
+        </form>
   </section>
 
 </body>
